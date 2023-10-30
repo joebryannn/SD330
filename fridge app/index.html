@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .floatCenter {
+            width: 600px;
+            height: 750px;
+            margin: 0px auto;
+            background-color: grey;
+            border-style: solid;
+        }
+
+        #closedFridge {
+            display: block; 
+            height: 500px;
+        }
+        #openFridge {
+            display: none; 
+            height: 400px;
+        }
+        #google {
+            display: none;
+            width: 500px;
+        }
+        #Netflix {
+            display: none;
+            height: 300px;
+        }
+        #celsius {
+            display: none;
+        }
+    </style>
+    <title>E06-Fridge</title>
+</head>
+<body>
+    <div id="main" class="floatCenter">
+        <h1 style="text-align: center;">JB's Main Fridge</h1>
+        <hr>
+        <p>
+            <h3>Temperature of the fridge: <div id="faren">40° F</div> <div id="celsius">1° C</div></h3>
+            <i> Displaying fridge status as of: </i><div id="p1"></div>
+        </p>
+
+        <img id="closedFridge" src="Frigec.png" alt="closed fridge" />
+        <img id="openFridge" src="frigeo.jpg" alt="open fridge" />
+        <img id="google" src="Google.png" alt="google Search" />
+        <img id="Netflix" src="Netflix.png" height="300" alt="Netflix" />
+
+        <div id="buttons" class="fullWidth">
+            <input type="button" onclick="button1()" id="button1" value="Open Fridge">
+            <input type="button" onclick="button2()" id="button2" value="Netflix">
+            <input type="button" onclick="button3()" id="button3" value="Google">
+            <input type="button" onclick="button4()" id="button4" value="Celsius">
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        (c) Asafo-Boakye - 15th October 2023
+    </footer>
+
+</body>
+<script>
+    function button1() {
+        but1 = document.getElementById("button1");
+        var closedFridge = document.getElementById('closedFridge');
+        var openFridge = document.getElementById('openFridge');
+        
+        if (but1.value == "Open Fridge") {
+            but1.value = "Close Fridge";
+            closedFridge.style.display = "none";
+            openFridge.style.display = "block";
+        } else {
+            but1.value = "Open Fridge";
+            closedFridge.style.display = "block";
+            openFridge.style.display = "none";
+        }
+    }
+
+    function button2() {
+        var netflixImage = document.getElementById('Netflix');
+        if (netflixImage.style.display === "none") {
+            netflixImage.style.display = "block";
+        } else {
+            netflixImage.style.display = "none";
+        }
+    }
+
+    function button3() {
+        var googleImage = document.getElementById('google');
+        if (googleImage.style.display === "none") {
+            googleImage.style.display = "block";
+        } else {
+            googleImage.style.display = "none";
+        }
+    }
+
+    function button4() {
+        but4 = document.getElementById("button4");
+        if (but4.value == "Celsius") {
+            but4.value = "Fahrenheit";
+            document.getElementById('celsius').style.display = "block";
+            document.getElementById('faren').style.display = "none";
+        } else {
+            but4.value = "Celsius";
+            document.getElementById('celsius').style.display = "none";
+            document.getElementById('faren').style.display = "block";
+        }
+    }
+
+    function turnOn() {
+        document.getElementById('button1').style.backgroundColor = "green";
+        document.getElementById('fridge').style.display = "block";
+    }
+
+    function turnOff() {
+        document.getElementById('button1').style.backgroundColor = "red";
+        document.getElementById('fridge').style.display = "none";
+    }
+
+    var date = new Date();
+    var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    var date_time = current_date + " " + current_time;
+    document.getElementById("p1").innerHTML = date_time;
+
+</script>
+</html>
 
