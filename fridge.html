@@ -3,127 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        .floatCenter {
-            width: 600px;
-            height: 750px;
-            margin: 0px auto;
-            background-color: grey;
-            border-style: solid;
-        }
+         .box-sizing {
+    box-sizing: border-box;
+}
 
-        #closedFridge {
-            display: block; 
-            height: 500px;
-        }
-        #openFridge {
-            display: none; 
-            height: 400px;
-        }
-        #google {
-            display: none;
-            width: 500px;
-        }
-        #Netflix {
-            display: none;
-            height: 300px;
-        }
-        #celsius {
-            display: none;
-        }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.floatCenter {
+    width: 700px;
+    height: 1000px;
+    margin: 0px auto;
+    background: rgb(71, 92, 80);
+    border-style: solid;
+}
+
+#fridge {
+    display: none;
+    height: 200px;
+}
+#google {
+    display: none;
+    width: 200px;
+    margin-right: 20px;
+}
+#weather {
+    width: 170px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 30px;
+}
+#tv {
+    display: none;
+    width: 300px;
+}
+#music {
+    display: none;
+    width: 200px;
+}
+
+.buttons {
+    text-align: center;
+    justify-content: center;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.list {
+    width: 30%;
+    height: auto;
+    margin-right: 1%;
+    float: center;
+    background: white;
+    border-style: solid;
+    padding-left: 10px;
+}
+
     </style>
-    <title>E06-Fridge</title>
+    <title>Fridge App</title>
 </head>
 <body>
+    <b>Asafo-Boakye Fridge </b>
     <div id="main" class="floatCenter">
-        <h1 style="text-align: center;">JB's Main Fridge</h1>
-        <hr>
-        <p>
-            <h3>Temperature of the fridge: <div id="faren">40° F</div> <div id="celsius">1° C</div></h3>
-            <i> Displaying fridge status as of: </i><div id="p1"></div>
-        </p>
-
-        <img id="closedFridge" src="Frigec.png" alt="closed fridge" />
-        <img id="openFridge" src="frigeo.jpg" alt="open fridge" />
-        <img id="google" src="Google.png" alt="google Search" />
-        <img id="Netflix" src="Netflix.png" height="300" alt="Netflix" />
-
-        <div id="buttons" class="fullWidth">
-            <input type="button" onclick="button1()" id="button1" value="Open Fridge">
-            <input type="button" onclick="button2()" id="button2" value="Netflix">
-            <input type="button" onclick="button3()" id="button3" value="Google">
-            <input type="button" onclick="button4()" id="button4" value="Celsius">
+     
+        <br>
+        <div id ="buttons" class="buttons">
+            <input type=button onclick="button1()" id ="button1" value ="Open Fridge">
+            </button>
+            <input type=button onclick="button2()" id ="button2" value ="Watch TV">
+            </button>
+            <input type=button onclick="button3()" id ="button3" value ="Google Recipes">
+            </button>
+            <input type=button onclick="button4()" id ="button4" value ="African Music">
+            </button>
+            <input type=button onclick="button5()" id ="button5" value ="24 Hour">
+            </button>
+            
         </div>
+
+        <img id="weather" src="Images/rain.jpg" alt="today's weather" /> 
+        <h3 id="weather">Current Weather:</h3>
+        <h3 style="padding: 0%; margin-bottom: 0%; color: rgb(255, 255, 255);"><i>ASAFO FRIDGEYYY </i></h3>
+        <h3>Fridge Temp:<p id="temp">20°F</p>
+            <button onclick="increaseTemp()">Increase Temperature</button>
+            <button onclick="decreaseTemp()">Decrease Temperature</button>
+            <button onclick="changeUnits()">Change Units</button>
+
+
+         <br></i>The time is<div id ="p1"></div></p>
+        <div class="list">
+            <h3>Shopping List</h3>
+            <ul>
+                <li>Bacon 🥓</li>
+                <li>Rice 🍚</li>
+                <li>Fish 🐠</li>
+                <li>Jollof 🌍</li>
+            </ul>
+                <input type="text" name="item" id="newItem" placeholder="Add to List">
+                <button type="submit" onclick="takeIn()">Submit</button> 
+        </div>
+
+        <button onclick="startTimer()">Start Timer</button>
+        <p>Time left: <span id="countdown"></span></p>
+       
+       <img id="fridge" src="Images/fridgeOpen.jpg" alt="fridge image" class="column"/> 
+       <img id="tv" src="Images/netflix.png" alt="tv" class="column"/>
+       <img id="google" src="Images/google.jpeg" alt="google image" class="column" />
+       <img id="music" src="Images/Music.jpeg" alt="album cover"/>
+       <br>
+           
+        </audio>
+        <audio id="alert-sound" src="Images/ding.mp3"></audio>
+        <audio id="myMusic">
+            <source src="Images/remaMusic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+ 
+
     </div>
 
     <footer>
         <hr>
-        (c) Asafo-Boakye - 15th October 2023
+        (c) AsafoBoakye - 5th November
     </footer>
 
 </body>
 <script>
-    function button1() {
-        but1 = document.getElementById("button1");
-        var closedFridge = document.getElementById('closedFridge');
-        var openFridge = document.getElementById('openFridge');
-        
+// FOR OPENING FRIDGE      
+    function button1(){
+        but1 = document.getElementById("button1")
         if (but1.value == "Open Fridge") {
             but1.value = "Close Fridge";
-            closedFridge.style.display = "none";
-            openFridge.style.display = "block";
+            turnOn();
         } else {
-            but1.value = "Open Fridge";
-            closedFridge.style.display = "block";
-            openFridge.style.display = "none";
+            but1.value ="Open Fridge";
+            turnOff();
         }
     }
 
-    function button2() {
-        var netflixImage = document.getElementById('Netflix');
-        if (netflixImage.style.display === "none") {
-            netflixImage.style.display = "block";
+// FOR Netflix
+function button2(){
+         but2 = document.getElementById("button2")
+        if (but2.value == "Watch TV") {
+            document.getElementById('tv').style.display = "block";
+            but2.value = "Stop TV";
+            play();
+
         } else {
-            netflixImage.style.display = "none";
+            but2.value ="Watch TV";
+            pause();
+            document.getElementById('tv').style.display = "none";
+
         }
+       
     }
 
-    function button3() {
-        var googleImage = document.getElementById('google');
-        if (googleImage.style.display === "none") {
-            googleImage.style.display = "block";
+// GOOGLE
+    function button3(){
+       
+        but3 = document.getElementById("button3")
+        if (but3.value == "Google Recipes") {
+            but3.value = "Close";
+            document.getElementById('google').style.display = "block";
         } else {
-            googleImage.style.display = "none";
+            but3.value ="Google Recipes";
+            document.getElementById('google').style.display = "none";
         }
+   
     }
 
-    function button4() {
-        but4 = document.getElementById("button4");
-        if (but4.value == "Celsius") {
-            but4.value = "Fahrenheit";
-            document.getElementById('celsius').style.display = "block";
-            document.getElementById('faren').style.display = "none";
+// PLAY MUSIC
+    function button4(){
+         but4 = document.getElementById("button4")
+        if (but4.value == "Play African Tunes") {
+            playMusic();
+            document.getElementById('music').style.display = "block";
+            document.getElementById('google').style.display = "none"; // Turn off google so that it is not overcorwded
+            pause();
+            document.getElementById('Netflix').style.display = "none";
+            but2.value ="Watch Netflix";
+            but4.value = "Pause";
+           
+
         } else {
-            but4.value = "Celsius";
-            document.getElementById('celsius').style.display = "none";
-            document.getElementById('faren').style.display = "block";
+            but4.value ="Play African Tunes";
+            pauseMusic();
+            document.getElementById('music').style.display = "none";
+
         }
+       
     }
 
-    function turnOn() {
-        document.getElementById('button1').style.backgroundColor = "green";
+//TEMPERATURE CHANGE
+        var temp = 40; // Starting temperature in F
+        var maxTemp = 50; // Max temp limit in F
+        var minTemp = 30; // Min temp limit in F
+        var isFahrenheit = true; // Temperature unit set
+
+        function increaseTemp() {
+            // Check if the temperature has reached the maximum limit
+            if (temp < maxTemp) {
+                // Increase temperature by 1 degree F
+                temp++;
+
+                // Update display
+                updateTempDisplay();
+            } else {
+                alert("Maximum temperature limit reached!");
+            }
+        }
+
+        function decreaseTemp() {
+            // Checking if min temp reachhed
+            if (temp > minTemp) {
+                // Decrease temperature by 1 degree F
+                temp--;
+
+                // Update display
+                updateTempDisplay();
+            } else {
+                alert("Minimum temperature limit reached!");
+            }
+        }
+
+        function changeUnits() {
+            // Switch Unit
+            isFahrenheit = !isFahrenheit;
+
+            // Update display
+            updateTempDisplay();
+        }
+
+        function updateTempDisplay() {
+            // Convert temperature to Celsius
+            var tempValue = temp;
+            var tempUnit = "°F";
+
+            if (!isFahrenheit) {
+                tempValue = (temp - 32) * 5 / 9;
+                tempUnit = "°C";
+            }
+
+            // Update display
+            document.getElementById("temp").innerHTML = tempValue.toFixed(1) + tempUnit;
+        }
+
+// TIME CHANGE
+    function button5(){
+        but1 = document.getElementById("button5")
+        if (but1.value == "24 Hour") {
+            but1.value = "12 Hour";
+            document.getElementById("p1").innerHTML = military_time;
+        } else {
+            but1.value ="24 Hour";
+            document.getElementById("p1").innerHTML = standard_time;
+
+        }
+    }  
+   
+// FOR FRIDGE
+    function turnOn(){
+        document.getElementById ('button1').style.backgroundColor="red";
         document.getElementById('fridge').style.display = "block";
     }
-
-    function turnOff() {
-        document.getElementById('button1').style.backgroundColor = "red";
+    function turnOff(){
+        document.getElementById ('button1').style.backgroundColor="green";
         document.getElementById('fridge').style.display = "none";
+        but1.value ="Open Fridge";
     }
 
+// FOR AUDIO    
+    var x = document.getElementById("myAudio");
+    function pause() {
+        x.pause();
+    }
+    function play(){
+        x.play();
+    }
+
+    var y = document.getElementById("myMusic");
+    function pauseMusic() {
+        y.pause();
+    }
+    function playMusic(){
+        y.play();
+    }
+
+//FOR LIST
+    function takeIn(){
+        var input = document.getElementById("newItem");
+        var node = document.createElement('li');
+        node.appendChild(document.createTextNode(input.value));
+        document.querySelector('ul').appendChild(node);
+    }
+
+// FOR COUNTDOWN
+    function startTimer() {
+        var timeLeft = 60; // Set 60 seconds countdown
+        var countdownElement = document.getElementById("countdown");
+        var alertSound = document.getElementById("alert-sound");
+
+        var countdownInterval = setInterval(function() {
+          var minutes = (timeLeft / 60) | 0;
+          var seconds = timeLeft % 60;
+          countdownElement.innerText = minutes + "m " + seconds + "s";
+
+          if (timeLeft <= 0) {
+            clearInterval(countdownInterval);
+            countdownElement.innerText = "Expired";
+            alertSound.play();
+          } else {
+            timeLeft--;
+          }
+        }, 1000); // Update every second
+      }
+
+// FOR TIME
     var date = new Date();
-    var current_date = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-    var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    var date_time = current_date + " " + current_time;
-    document.getElementById("p1").innerHTML = date_time;
+    var military_time = date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+    var hours = date.getHours() % 12 || 12;
+    var standard_time = hours + ":"+date.getMinutes()+":"+ date.getSeconds();
+    document.getElementById("p1").innerHTML = standard_time;
+
+    function inc(i){
+        i++;
+        document.getElementById('inc').value = i;
+    }
+
+   
+ 
+
 
 </script>
 </html>
