@@ -1,1 +1,123 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joseph-Bryan's GitHub Repository</title>
+    <style>
+        body {
+            background-image: url('mars.jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            max-width: 800px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #intro {
+            text-align: center;
+        }
+
+        #photo {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        #files {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .fileDiv {
+            text-align: left;
+            background-color: #d0ff96;
+            padding: 10px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Main Page</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <img id="photo" src="smile.png" alt="Smiley Face ">
+            <p>Below are all the links and resources for my System Design Class</p>
+        </section>
+        
+        <section id="files">
+            <div class="fileDiv" id="htmlDiv">
+                <h2>HTML Files</h2>
+            </div>
+            <div class="fileDiv" id="otherDiv">
+                <h2>Other Files</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Asafo-Bokye - November 7th, 2023</p>
+    </footer>
+
+    <script>
+        function githubFilelist() {
+            (async () => {
+                const response = await fetch("https://api.github.com/repos/joebryannn/SD330/contents/");
+                const data = await response.json();
+
+                var htmlFiles = "";
+                var otherFiles = "";
+
+                for (let file of data) {
+                    var fname = file.name;
+                    var fpath = "https://joebryannn.github.io/SD330/" + fname;
+
+                    if (fname.endsWith('.html')) {
+                        htmlFiles += `<p><a href="${fpath}" target="_blank">${fname}</a></p>`;
+                    } else {
+                        otherFiles += `<p><a href="${fpath}" target="_blank">${fname}</a></p>`;
+                    }
+                }
+
+                document.getElementById('htmlDiv').innerHTML = `<h2>HTML Files</h2>${htmlFiles}`;
+                document.getElementById('otherDiv').innerHTML = `<h2>Other Files</h2>${otherFiles}`;
+            })();
+        }
+
+        githubFilelist();
+    </script>
+</body>
+</html>
+
