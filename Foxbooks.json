@@ -1,0 +1,218 @@
+{
+    "courses": {
+        "280": {
+            "courseNumber": 280,
+            "courseTitle": "Global Perspectives on Contemporary Africa",
+            "credits": 3,
+            "courseSubject": "History",
+            "professor": "Dr. Aisha Johnson",
+            "building": "Johnson Hall",
+            "room": "205",
+            "textbooks": {
+                "1": {
+                    "title": "Africa Today: Challenges and Opportunities",
+                    "ISBN": "9781423228479",
+                    "publisher": "Barcharts",
+                    "edition": 2,
+                    "author": "Elena Ross"
+                },
+                "2": {
+                    "title": "Power and Governance in Africa",
+                    "ISBN": "9780190668371",
+                    "publisher": "Oxford University Press",
+                    "edition": 1,
+                    "author": "Ama Biney"
+                },
+                "3": {
+                    "title": "African Cities: A Framework for Urban Development",
+                    "ISBN": "9780415732667",
+                    "publisher": "Routledge",
+                    "edition": 1,
+                    "author": "Garth Myers"
+                }
+            }
+        },
+        "101": {
+            "courseNumber": 101,
+            "courseTitle": "Ethical Dilemmas in Philosophy",
+            "credits": 3,
+            "courseSubject": "Philosophy",
+            "professor": "Dr. Emily Rodriguez",
+            "building": "Humanities",
+            "room": "4201",
+            "textbooks": {
+                "1": {
+                    "title": "Ethics: Theory and Practice",
+                    "ISBN": "9781285196541",
+                    "publisher": "Cengage Learning",
+                    "edition": 11,
+                    "author": "Jacques P. Thiroux"
+                },
+                "2": {
+                    "title": "Moral Choices: An Introduction to Ethics",
+                    "ISBN": "9780310291091",
+                    "publisher": "Zondervan",
+                    "edition": 4,
+                    "author": "Scott B. Rae"
+                },
+                "3": {
+                    "title": "Contemporary Moral Arguments",
+                    "ISBN": "9780199928902",
+                    "publisher": "Oxford University Press",
+                    "edition": 2,
+                    "author": "Lewis Vaughn"
+                }
+            }
+        },
+        "203": {
+            "courseNumber": 203,
+            "courseTitle": "Introduction to Music Theory",
+            "credits": 3,
+            "courseSubject": "Music",
+            "professor": "Dr. Katherine Harmony",
+            "building": "Music",
+            "room": "3204",
+            "textbooks": {
+                "1": {
+                    "title": "Fundamentals of Music Theory",
+                    "ISBN": "9780190851217",
+                    "publisher": "Oxford University Press",
+                    "edition": 1,
+                    "author": "John Smith"
+                },
+                "2": {
+                    "title": "Harmony in Practice",
+                    "ISBN": "9780199347080",
+                    "publisher": "Oxford University Press",
+                    "edition": 2,
+                    "author": "Emily Brown"
+                }
+            }
+        },
+        "240": {
+            "courseNumber": 240,
+            "courseTitle": "Business Accounting Principles",
+            "credits": 3,
+            "courseSubject": "Business",
+            "professor": "Dr. Sarah Ledger",
+            "building": "Dyson",
+            "room": "105",
+            "textbooks": {
+                "1": {
+                    "title": "Financial Accounting: Concepts and Applications",
+                    "ISBN": "9781337280579",
+                    "publisher": "Cengage Learning",
+                    "edition": 12,
+                    "author": "Alain C. Ducasse"
+                },
+                "2": {
+                    "title": "Managerial Accounting: Tools for Business Decision Making",
+                    "ISBN": "9781119490708",
+                    "publisher": "Wiley",
+                    "edition": 9,
+                    "author": "Jerry J. Weygandt"
+                }
+            }
+        },
+        "107": {
+            "courseNumber": 107,
+            "courseTitle": "Nutrition and Fitness",
+            "credits": 3,
+            "courseSubject": "Physical Education",
+            "professor": "Dr. Samantha Strong",
+            "building": "McCann",
+            "room": "112",
+            "textbooks": {
+                "1": {
+                    "title": "Essentials of Nutrition and Diet Therapy",
+                    "ISBN": "9780323595736",
+                    "publisher": "Elsevier",
+                    "edition": 12,
+                    "author": "Sue Rodwell Williams"
+                },
+                "2": {
+                    "title": "Strength Training Anatomy",
+                    "ISBN": "9781492588511",
+                    "publisher": "Human Kinetics",
+                    "edition": 4,
+                    "author": "Frederic Delavier"
+                }
+            }
+        },
+        "260": {
+            "courseNumber": 260,
+            "courseTitle": "Advanced Jazz Studies",
+            "credits": 3,
+            "courseSubject": "Music",
+            "professor": "Prof. Miles Davis",
+            "building": "Music",
+            "room": "3204",
+            "textbooks": {
+                "1": {
+                    "title": "Miles: The Autobiography",
+                    "ISBN": "9781451643183",
+                    "publisher": "Simon & Schuster",
+                    "edition": 1,
+                    "author": "Miles Davis"
+                },
+                "2": {
+                    "title": "Jazz Improvisation: A Comprehensive Method for All Players",
+                    "ISBN": "9780634000199",
+                    "publisher": "Hal Leonard",
+                    "edition": 1,
+                    "author": "David Baker"
+                }
+            }
+        },
+        "270": {
+            "courseNumber": 270,
+            "courseTitle": "Military History: World Wars",
+            "credits": 3,
+            "courseSubject": "History",
+            "professor": "Dr. Winston Patton",
+            "building": "Dyson",
+            "room": "102",
+            "textbooks": {
+                "1": {
+                    "title": "The First World War: A Very Short Introduction",
+                    "ISBN": "9780199205592",
+                    "publisher": "Oxford University Press",
+                    "edition": 3,
+                    "author": "Michael Howard"
+                },
+                "2": {
+                    "title": "The Second World War",
+                    "ISBN": "9780143035732",
+                    "publisher": "Penguin Books",
+                    "edition": 1,
+                    "author": "Sir Winston S. Churchill"
+                }
+            }
+        },
+        "310": {
+            "courseNumber": 310,
+            "courseTitle": "Psychology of Strategic Thinking",
+            "credits": 3,
+            "courseSubject": "Psychology",
+            "professor": "Dr. Lisa Strategy",
+            "building": "Dyson",
+            "room": "219",
+            "textbooks": {
+                "1": {
+                    "title": "The Art Of War",
+                    "ISBN": "9781599869773",
+                    "publisher": "Filiquarian",
+                    "edition": 1,
+                    "author": "Sun Tzu"
+                  },
+                "2": {
+                    "title": "Contemporary Strategy Analysis",
+                    "ISBN": "9781119120841",
+                    "publisher": "Wiley",
+                    "edition": 9,
+                    "author": "Robert M. Grant"
+                }
+            }
+        }
+    }   
+}
