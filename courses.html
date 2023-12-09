@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FoxBooks - Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="foxbooks.html">
+                    <img src="fox.png" alt="FoxBooks Logo" />
+                </a>
+            </div>
+            <ul>
+                <li><a href="FoxHomepage.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="404.html">Order</a></li>
+                <li><a href="404.html">Professors</a></li>
+                <li><a href="404.html">Store</a></li>
+                <li><a href="404.html">About Us</a></li>
+                <li><a href="404.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="breadcrumbs">
+            <a href="FoxHomepage.html">Home</a> > <a href="courses.html">Courses</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="margin-left: 20px;">Current Courses:</h1>
+        <ul id="coursesList">
+            <!-- Courses will be loaded here -->
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; Joseph-Bryan Asafo-Boakye - 2023 FoxBooks.</p>
+        <p><a href="404.html">Terms of Service</a> | <a href="404.html">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Function to load the JSON file and display the courses
+        const fetchData = async () => {
+            try {
+   
+                const response = await fetch('https://joebryannn.github.io/SD330/foxbooks.json');
+                const data = await response.json();
+                const coursesList = document.getElementById('coursesList');
+                let coursesHtml = '';
+
+                data.courses.forEach(course => {
+                    coursesHtml += `<li>
+                            <h3><a href="books.html?CourseID=${course.CourseID}">${course.Title}</a></h3>
+                            <p><strong>Course ID:</strong> ${course.CourseID}</p>
+                            <p><strong>Department:</strong> ${course.CourseType}</p>
+                            <p><strong>Semester:</strong> ${course.Semester}</p>
+                            <p><strong>Professor:</strong> ${course.Professor}</p>
+                            <p><strong>Credits:</strong> ${course.Credits}</p>
+                            <p><strong>Grading Scale:</strong> ${course.GradingScale}</p>
+                          </li>`;
+                });
+
+                coursesList.innerHTML = coursesHtml;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    </script>
+
+</body>
+
+</html>
