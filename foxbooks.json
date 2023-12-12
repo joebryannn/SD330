@@ -91,6 +91,13 @@
       "CourseID": "CS201"
     },
     {
+      "ISBN": "5555444433",
+      "Title": "Algorithms Unleashed",
+      "Author": "Algorithm Wizard",
+      "Publisher": "TechGenius Press",
+      "CourseID": "CS201"
+    },
+    {
       "ISBN": "2222333344",
       "Title": "Environmental Science Explained",
       "Author": "Jane Green",
@@ -105,10 +112,24 @@
       "CourseID": "M301"
     },
     {
+      "ISBN": "9999888777",
+      "Title": "Probability: A Practical Guide",
+      "Author": "Probability Pro",
+      "Publisher": "Probabilities Ltd.",
+      "CourseID": "M301"
+    },
+    {
       "ISBN": "4444555566",
       "Title": "Quantum Mechanics: A Modern Approach",
       "Author": "Physics Maven",
       "Publisher": "Quantum Books",
+      "CourseID": "P202"
+    },
+    {
+      "ISBN": "2222111100",
+      "Title": "Exploring Quantum Realms",
+      "Author": "Quantum Explorer",
+      "Publisher": "Quantum Press",
       "CourseID": "P202"
     },
     {
@@ -119,10 +140,24 @@
       "CourseID": "A301"
     },
     {
+      "ISBN": "1010101010",
+      "Title": "Contemporary Art Insights",
+      "Author": "Art Connoisseur",
+      "Publisher": "ModernArt Books",
+      "CourseID": "A301"
+    },
+    {
       "ISBN": "6666777888",
       "Title": "Age of Discovery: A Global Perspective",
       "Author": "Explorer Extraordinaire",
       "Publisher": "Explorer Press",
+      "CourseID": "H401"
+    },
+    {
+      "ISBN": "1234321432",
+      "Title": "Voyages of Discovery",
+      "Author": "Global Voyager",
+      "Publisher": "Discoveries Inc.",
       "CourseID": "H401"
     },
     {
@@ -133,6 +168,13 @@
       "CourseID": "H202"
     },
     {
+      "ISBN": "9898989898",
+      "Title": "Tales of the Middle Ages",
+      "Author": "Medieval Storyteller",
+      "Publisher": "Historical Narratives",
+      "CourseID": "H202"
+    },
+    {
       "ISBN": "8888999000",
       "Title": "Marketing Mastery",
       "Author": "Market Pro",
@@ -140,10 +182,24 @@
       "CourseID": "B202"
     },
     {
+      "ISBN": "2020202020",
+      "Title": "Digital Marketing Strategies",
+      "Author": "Digital Marketer",
+      "Publisher": "MarketingTech Books",
+      "CourseID": "B202"
+    },
+    {
       "ISBN": "9999000011",
       "Title": "The Art of Culinary Innovation",
       "Author": "Culinary Innovator",
       "Publisher": "Gourmet Press",
+      "CourseID": "C201"
+    },
+    {
+      "ISBN": "7890789078",
+      "Title": "Gastronomic Wonders",
+      "Author": "Culinary Maestro",
+      "Publisher": "Epicurean Publications",
       "CourseID": "C201"
     }
   ]
