@@ -1,149 +1,250 @@
-"courses": [
+{
+  "courses": [
     {
-      "CourseID": "CS201",
-      "Title": "Advanced Algorithms",
+      "CourseID": "CS101",
+      "Title": "Computer Science I",
       "CourseType": "Special",
       "Semester": "Fall",
-      "Professor": "Dr. Rodriguez",
+      "Professor": "Dr. Smith",
       "Credits": 4,
-      "GradingScale": "Advanced"
-    },
-    {
-      "CourseID": "E101",
-      "Title": "Introduction to Environmental Science",
-      "CourseType": "Science",
-      "Semester": "Fall",
-      "Professor": "Dr. Greenfield",
-      "Credits": 3,
       "GradingScale": "Standard"
     },
     {
-      "CourseID": "M301",
-      "Title": "Statistics and Probability",
-      "CourseType": "Mathematics",
-      "Semester": "Fall",
-      "Professor": "Dr. Statman",
-      "Credits": 4,
-      "GradingScale": "Advanced"
-    },
-    {
-      "CourseID": "P202",
-      "Title": "Modern Physics",
-      "CourseType": "Science",
-      "Semester": "Spring",
-      "Professor": "Dr. Quantum",
-      "Credits": 4,
-      "GradingScale": "Advanced"
-    },
-    {
-      "CourseID": "A301",
-      "Title": "Art History: Renaissance to Contemporary",
+      "CourseID": "L101",
+      "Title": "Introduction to Literature",
       "CourseType": "Arts",
-      "Semester": "Spring",
-      "Professor": "Dr. Artiste",
+      "Semester": "Fall",
+      "Professor": "Dr. Longbottom",
       "Credits": 3,
       "GradingScale": "Custom"
     },
     {
-      "CourseID": "H401",
-      "Title": "World History: Age of Exploration",
-      "CourseType": "History",
+      "CourseID": "S201",
+      "Title": "Biology I",
+      "CourseType": "Science",
       "Semester": "Fall",
-      "Professor": "Dr. Columbus",
-      "Credits": 3,
-      "GradingScale": "Standard"
-    },
-    {
-      "CourseID": "H202",
-      "Title": "Medieval Europe",
-      "CourseType": "History",
-      "Semester": "Spring",
-      "Professor": "Dr. Camelot",
-      "Credits": 3,
-      "GradingScale": "Standard"
-    },
-    {
-      "CourseID": "B202",
-      "Title": "Marketing Fundamentals",
-      "CourseType": "Business",
-      "Semester": "Fall",
-      "Professor": "Dr. Marketeer",
+      "Professor": "Dr. Ivy",
       "Credits": 4,
       "GradingScale": "Standard"
     },
     {
-      "CourseID": "C201",
-      "Title": "Advanced Culinary Techniques",
+      "CourseID": "S202",
+      "Title": "Biology II",
+      "CourseType": "Science",
+      "Semester": "Spring",
+      "Professor": "Dr. Christophlepots",
+      "Credits": 4,
+      "GradingScale": "Standard"
+    },
+    {
+      "CourseID": "A202",
+      "Title": "Film Studies",
       "CourseType": "Arts",
       "Semester": "Spring",
-      "Professor": "Dr. CulinaryMaestro",
+      "Professor": "Dr. Tarantino",
+      "Credits": 3,
+      "GradingScale": "Custom"
+    },
+    {
+      "CourseID": "H301",
+      "Title": "American History",
+      "CourseType": "History",
+      "Semester": "Fall",
+      "Professor": "Dr. Washington",
+      "Credits": 3,
+      "GradingScale": "Standard"
+    },
+    {
+      "CourseID": "H201",
+      "Title": "Ancient Rome",
+      "CourseType": "History",
+      "Semester": "Spring",
+      "Professor": "Dr. Smith",
+      "Credits": 3,
+      "GradingScale": "Standard"
+    },
+    {
+      "CourseID": "B101",
+      "Title": "Introduction to Business",
+      "CourseType": "Special",
+      "Semester": "Fall",
+      "Professor": "Dr. Dontnonothin",
+      "Credits": 4,
+      "GradingScale": "Standard"
+    },
+    {
+      "CourseID": "C101",
+      "Title": "Culinary 101",
+      "CourseType": "Arts",
+      "Semester": "Spring",
+      "Professor": "Dr. Fieri",
       "Credits": 3,
       "GradingScale": "Custom"
     }
   ],
   "books": [
     {
-      "ISBN": "1111222233",
-      "Title": "Data Structures and Algorithms",
+      "ISBN": "123456790",
+      "Title": "The C Programming Language",
+      "Author": "Kernighan and Ritchie",
+      "Publisher": "Whisping Willow Press",
+      "CourseID": "CS101"
+    },
+    {
+      "ISBN": "2345678901",
+      "Title": "The Java Programming Language",
+      "Author": "Bingo and Wagwan",
+      "Publisher": "Midnight Ink Publishing",
+      "CourseID": "CS101"
+    },
+    {
+      "ISBN": "3456789012",
+      "Title": "Calculus I",
       "Author": "John Doe",
-      "Publisher": "CodeCraft Publications",
-      "CourseID": "CS201"
+      "Publisher": "Emerald Horizon Books",
+      "CourseID": "M101"
     },
     {
-      "ISBN": "2222333344",
-      "Title": "Environmental Science Explained",
-      "Author": "Jane Green",
-      "Publisher": "EcoWise Books",
-      "CourseID": "E101"
+      "ISBN": "4567890123",
+      "Title": "Intro to Calculus II",
+      "Author": "Jane Doe",
+      "Publisher": "Emerald Horizon Books",
+      "CourseID": "M101"
     },
     {
-      "ISBN": "3333444455",
-      "Title": "Statistical Methods in Science",
-      "Author": "Stat Guru",
-      "Publisher": "StatsPress",
-      "CourseID": "M301"
+      "ISBN": "5678901234",
+      "Title": "Naruto",
+      "Author": "Masashi Kishimoto",
+      "Publisher": "Shueisha",
+      "CourseID": "L101"
     },
     {
-      "ISBN": "4444555566",
-      "Title": "Quantum Mechanics: A Modern Approach",
-      "Author": "Physics Maven",
-      "Publisher": "Quantum Books",
-      "CourseID": "P202"
+      "ISBN": "6789012345",
+      "Title": "20th Century Boys",
+      "Author": "Naoki Urasawa",
+      "Publisher": "Shogakukan",
+      "CourseID": "L101"
     },
     {
-      "ISBN": "5555666777",
-      "Title": "Art Through the Ages",
-      "Author": "Art Historian",
-      "Publisher": "Artistry Publications",
-      "CourseID": "A301"
+      "ISBN": "7890123456",
+      "Title": "The Great Gatsby",
+      "Author": "F Scott Fitzgerald",
+      "Publisher": "Simon & Schuster",
+      "CourseID": "L101"
     },
     {
-      "ISBN": "6666777888",
-      "Title": "Age of Discovery: A Global Perspective",
-      "Author": "Explorer Extraordinaire",
-      "Publisher": "Explorer Press",
-      "CourseID": "H401"
+      "ISBN": "8901234567",
+      "Title": "The Cat in the Hat",
+      "Author": "Dr. Seuss",
+      "Publisher": "Lost Horizon Press",
+      "CourseID": "L101"
     },
     {
-      "ISBN": "7777888999",
-      "Title": "Medieval Chronicles",
-      "Author": "History Buff",
-      "Publisher": "Castle Books",
-      "CourseID": "H202"
+      "ISBN": "9012345678",
+      "Title": "Principles of Biology",
+      "Author": "Bill Nye",
+      "Publisher": "Silver Lining Editions",
+      "CourseID": "S201"
     },
     {
-      "ISBN": "8888999000",
-      "Title": "Marketing Mastery",
-      "Author": "Market Pro",
-      "Publisher": "BrandBuilders Publishing",
-      "CourseID": "B202"
+      "ISBN": "0123456789",
+      "Title": "Intro to Biology",
+      "Author": "Bill Nye",
+      "Publisher": "Azul Dreams Press",
+      "CourseID": "S201"
     },
     {
-      "ISBN": "9999000011",
-      "Title": "The Art of Culinary Innovation",
-      "Author": "Culinary Innovator",
-      "Publisher": "Gourmet Press",
-      "CourseID": "C201"
+      "ISBN": "0987654321",
+      "Title": "Molecular Biology",
+      "Author": "Sceince Man",
+      "Publisher": "Sunflower Seed Productions",
+      "CourseID": "S202"
+    },
+    {
+      "ISBN": "9876543210",
+      "Title": "Big Bio",
+      "Author": "Ratata Slingo",
+      "Publisher": "Zenith Press",
+      "CourseID": "S202"
+    },
+    {
+      "ISBN": "8765432109",
+      "Title": "The Art of Film",
+      "Author": "Martin Scorsese",
+      "Publisher": "Mystic River Press",
+      "CourseID": "A202"
+    },
+    {
+      "ISBN": "7654321098",
+      "Title": "Ins and Outs of Film Tech",
+      "Author": "Quentin Tarantino",
+      "Publisher": "Pulp Fiction Publishing",
+      "CourseID": "A202"
+    },
+    {
+      "ISBN": "6543210987",
+      "Title": "The American Revolution",
+      "Author": "Old Folk",
+      "Publisher": "Aurora Books",
+      "CourseID": "H301"
+    },
+    {
+      "ISBN": "5432109876",
+      "Title": "United States History",
+      "Author": "Founding Fathers",
+      "Publisher": "Crimson Tide Press",
+      "CourseID": "H301"
+    },
+    {
+      "ISBN": "4321098765",
+      "Title": "The Fall of the Roman Empire",
+      "Author": "Sendipoclese Ringer",
+      "Publisher": "White Birch Press",
+      "CourseID": "H201"
+    },
+    {
+      "ISBN": "3210987654",
+      "Title": "The Rise of the Roman Empire",
+      "Author": "Julius Caesar",
+      "Publisher": "Blue Marlin Publishing",
+      "Course
+
+ID": "H201"
+    },
+    {
+      "ISBN": "2109876543",
+      "Title": "Business 101",
+      "Author": "Three Average Guys",
+      "Publisher": "Luncar Echo Publications",
+      "CourseID": "B101"
+    },
+    {
+      "ISBN": "1098765432",
+      "Title": "Principles of Economics",
+      "Author": "Eugene Krabs",
+      "Publisher": "Raindrop Publications",
+      "CourseID": "B101"
+    },
+    {
+      "ISBN": "1357924680",
+      "Title": "Business Ethics",
+      "Author": "Michael Scott",
+      "Publisher": "We Don't Know Press",
+      "CourseID": "B101"
+    },
+    {
+      "ISBN": "2468013579",
+      "Title": "How to Bake",
+      "Author": "Mrs. Claus",
+      "Publisher": "North Pole Publications",
+      "CourseID": "C101"
+    },
+    {
+      "ISBN": "1234509876",
+      "Title": "Master Cook Book",
+      "Author": "Spongebob Square-Pants",
+      "Publisher": "Northern Light Books",
+      "CourseID": "C101"
     }
   ]
 }
