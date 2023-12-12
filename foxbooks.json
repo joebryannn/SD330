@@ -83,68 +83,130 @@
     }
   ],
   "books": [
-    {
-      "ISBN": "1111222233",
-      "Title": "Data Structures and Algorithms",
-      "Author": "John Doe",
-      "Publisher": "CodeCraft Publications",
-      "CourseID": "CS201"
-    },
-    {
-      "ISBN": "2222333344",
-      "Title": "Environmental Science Explained",
-      "Author": "Jane Green",
-      "Publisher": "EcoWise Books",
-      "CourseID": "E101"
-    },
-    {
-      "ISBN": "3333444455",
-      "Title": "Statistical Methods in Science",
-      "Author": "Stat Guru",
-      "Publisher": "StatsPress",
-      "CourseID": "M301"
-    },
-    {
-      "ISBN": "4444555566",
-      "Title": "Quantum Mechanics: A Modern Approach",
-      "Author": "Physics Maven",
-      "Publisher": "Quantum Books",
-      "CourseID": "P202"
-    },
-    {
-      "ISBN": "5555666777",
-      "Title": "Art Through the Ages",
-      "Author": "Art Historian",
-      "Publisher": "Artistry Publications",
-      "CourseID": "A301"
-    },
-    {
-      "ISBN": "6666777888",
-      "Title": "Age of Discovery: A Global Perspective",
-      "Author": "Explorer Extraordinaire",
-      "Publisher": "Explorer Press",
-      "CourseID": "H401"
-    },
-    {
-      "ISBN": "7777888999",
-      "Title": "Medieval Chronicles",
-      "Author": "History Buff",
-      "Publisher": "Castle Books",
-      "CourseID": "H202"
-    },
-    {
-      "ISBN": "8888999000",
-      "Title": "Marketing Mastery",
-      "Author": "Market Pro",
-      "Publisher": "BrandBuilders Publishing",
-      "CourseID": "B202"
-    },
-    {
-      "ISBN": "9999000011",
-      "Title": "The Art of Culinary Innovation",
-      "Author": "Culinary Innovator",
-      "Publisher": "Gourmet Press",
-      "CourseID": "C201"
-    }
-  ]
-}
+  {
+    "ISBN": "1111222233",
+    "Title": "Data Structures and Algorithms",
+    "Author": "John Doe",
+    "Publisher": "CodeCraft Publications",
+    "CourseID": "CS201"
+  },
+  {
+    "ISBN": "2222333344",
+    "Title": "Environmental Science Explained",
+    "Author": "Jane Green",
+    "Publisher": "EcoWise Books",
+    "CourseID": "E101"
+  },
+  {
+    "ISBN": "3333444455",
+    "Title": "Statistical Methods in Science",
+    "Author": "Stat Guru",
+    "Publisher": "StatsPress",
+    "CourseID": "M301"
+  },
+  {
+    "ISBN": "4444555566",
+    "Title": "Quantum Mechanics: A Modern Approach",
+    "Author": "Physics Maven",
+    "Publisher": "Quantum Books",
+    "CourseID": "P202"
+  },
+  {
+    "ISBN": "5555666777",
+    "Title": "Art Through the Ages",
+    "Author": "Art Historian",
+    "Publisher": "Artistry Publications",
+    "CourseID": "A301"
+  },
+  {
+    "ISBN": "6666777888",
+    "Title": "Age of Discovery: A Global Perspective",
+    "Author": "Explorer Extraordinaire",
+    "Publisher": "Explorer Press",
+    "CourseID": "H401"
+  },
+  {
+    "ISBN": "7777888999",
+    "Title": "Medieval Chronicles",
+    "Author": "History Buff",
+    "Publisher": "Castle Books",
+    "CourseID": "H202"
+  },
+  {
+    "ISBN": "8888999000",
+    "Title": "Marketing Mastery",
+    "Author": "Market Pro",
+    "Publisher": "BrandBuilders Publishing",
+    "CourseID": "B202"
+  },
+  {
+    "ISBN": "9999000011",
+    "Title": "The Art of Culinary Innovation",
+    "Author": "Culinary Innovator",
+    "Publisher": "Gourmet Press",
+    "CourseID": "C201"
+  },
+  {
+    "ISBN": "1011121314",
+    "Title": "Advanced Algorithms and Data Structures",
+    "Author": "Alice Smith",
+    "Publisher": "CodeCraft Publications",
+    "CourseID": "CS301"
+  },
+  {
+    "ISBN": "1213141516",
+    "Title": "Ecology in Action",
+    "Author": "David Blue",
+    "Publisher": "EcoWise Books",
+    "CourseID": "E201"
+  },
+  {
+    "ISBN": "1314151617",
+    "Title": "Applied Statistics for Research",
+    "Author": "Stats Expert",
+    "Publisher": "StatsPress",
+    "CourseID": "M401"
+  },
+  {
+    "ISBN": "1415161718",
+    "Title": "Exploring Quantum Physics",
+    "Author": "Quantum Explorer",
+    "Publisher": "Quantum Books",
+    "CourseID": "P302"
+  },
+  {
+    "ISBN": "1516171819",
+    "Title": "Modern Art Movements",
+    "Author": "Art Enthusiast",
+    "Publisher": "Artistry Publications",
+    "CourseID": "A401"
+  },
+  {
+    "ISBN": "1617181920",
+    "Title": "Global Exploration: From Sea to Space",
+    "Author": "Adventurer",
+    "Publisher": "Explorer Press",
+    "CourseID": "H501"
+  },
+  {
+    "ISBN": "1718192021",
+    "Title": "Renaissance Revisited",
+    "Author": "History Scholar",
+    "Publisher": "Castle Books",
+    "CourseID": "H302"
+  },
+  {
+    "ISBN": "1819202122",
+    "Title": "Digital Marketing Dynamics",
+    "Author": "Marketing Maven",
+    "Publisher": "BrandBuilders Publishing",
+    "CourseID": "B302"
+  },
+  {
+    "ISBN": "1920212223",
+    "Title": "Innovative Culinary Creations",
+    "Author": "Culinary Visionary",
+    "Publisher": "Gourmet Press",
+    "CourseID": "C301"
+  }
+]
